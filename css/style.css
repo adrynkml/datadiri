@@ -1,0 +1,242 @@
+body {
+  margin: 20px;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f5f5f5;
+}
+/* 
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center ;
+    width: 100%;
+}
+ */
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 2px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;        /* Tengah isi logo */
+    gap: 10px;
+}
+
+
+img:hover {
+    cursor: pointer;
+    background-color: #91bff0;
+}
+
+/* .logo img {
+    margin-right: 8px;
+    vertical-align: middle;
+} */
+
+
+/* .nav-bar {
+    background-color: #f8f9fa;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    color: #546a82;
+    justify-content: center;
+    flex-direction: column;
+} */
+
+.nav-bar {
+    background: linear-gradient(90deg, #7c93ac 0%, #91bff0 100%);
+    padding: 18px 32px;
+    display: flex;
+    flex-direction: column;         /* Susun logo dan nav-list ke bawah */
+    align-items: center;            /* Tengah secara horizontal */
+    justify-content: center;        /* Tengah secara vertikal */
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+    border-radius: 12px;
+    margin: 40px auto 30px auto;    /* Tengah dan margin sama seperti .container */
+    max-width: 700px;               /* Batas lebar sama seperti .container */
+    gap: 10px;
+}
+
+/* .nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #007bff;
+    margin-left: 20px;
+}
+
+.nav-list a:hover {
+    text-decoration: underline;
+} */
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 24px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 8px 18px;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 0 transparent;
+}
+
+.nav-list a:hover {
+    background: rgba(255,255,255,0.18);
+    color: #23395d;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+    text-decoration: none;
+}
+
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  background-color: rgb(113, 145, 233);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 50px;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 15px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #eef0f2;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+button {
+  margin-top: 20px;
+  padding: 15px;
+  width: 100%;
+  background-color: #7c93ac;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #6b7f9c;
+}
+
+.isiform {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* thead {
+    background-color: #7c93ac;
+    color: rgb(27, 21, 21);
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.hasil {
+    background-color: rgb(121, 198, 249);
+    color: rgb(16, 12, 12);
+    font-weight: bold;
+    padding: 50px;
+    border-radius: 10px;
+    max-width: 700px;
+    margin: 40px auto;
+}
+
+tbody {
+    background-color: #f8f9fa;
+} */
+
+thead {
+    background-color: #7c93ac;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 20px;
+    border-bottom: 2px solid #546a82;
+}
+
+tbody {
+    background-color: #f8f9fa;
+}
+
+th, td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+}
+
+tr:hover {
+    background-color: #e3eaf6;
+}
+
+table {
+    margin: 40px auto;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 700px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.hasil h2 {
+    text-align: center;
+    color: #333;
+}
+
+.hasil p {
+    text-align: center;
+    color: #666;
+}
+
+
+.edit-btn, .delete-btn {
+    padding: 6px 12px;
+    margin: 0 2px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.edit-btn {
+    background-color: #ffd966;
+    color: #333;
+}
+
+.delete-btn {
+    background-color: #ff6b6b;
+    color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
