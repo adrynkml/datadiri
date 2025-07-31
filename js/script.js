@@ -12,9 +12,7 @@ document.getElementById("isiform").addEventListener("submit", function (e) {
   const tableBody = document.getElementById("tabelbody");
   const row = document.createElement("tr");
 
-
-
-  row.innerHTML = `
+row.innerHTML = `
   <td data-label="No"></td>
   <td data-label="Nama">${nama}</td>
   <td data-label="Usia">${usia}</td>
@@ -26,7 +24,7 @@ document.getElementById("isiform").addEventListener("submit", function (e) {
     <button class="delete-btn">Hapus</button>
   </td>
 `;
-  
+
   tableBody.appendChild(row);
   document.getElementById("isiform").reset();
   updateNomor();
