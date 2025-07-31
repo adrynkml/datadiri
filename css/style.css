@@ -31,13 +31,6 @@ img:hover {
     background-color: #91bff0;
 }
 
-/* Tambahkan di akhir file CSS kamu */
-
-
-
-
-
-
 /* .logo img {
     margin-right: 8px;
     vertical-align: middle;
@@ -248,22 +241,7 @@ html {
   scroll-behavior: smooth;
 }
 
-@media (max-width: 800px) {
-  table {
-    width: 100%;
-    max-width: 100%;
-    font-size: 14px;
-  }
-  th, td {
-    padding: 8px 6px;
-  }
-  .container, .hasil {
-    padding: 20px;
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   table, thead, tbody, th, td, tr {
     display: block;
     width: 100%;
@@ -285,6 +263,7 @@ html {
     border-bottom: 1px solid #eee;
     text-align: left;
     min-height: 32px;
+    box-sizing: border-box;
   }
   td:before {
     position: absolute;
